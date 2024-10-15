@@ -1,0 +1,80 @@
+.main-container{
+    display: grid;
+    grid-template-areas:
+    "nav nav nav nav nav nav nav"
+    "sidebar dash dash dash dash dash dash"
+    "sidebar dash dash dash dash dash dash"
+    "sidebar dash dash dash dash dash dash"
+    "sidebar dash dash dash dash dash dash"
+    "sidebar dash dash dash dash dash dash"
+    "sidebar dash dash dash dash dash dash"
+    "sidebar dash dash dash dash dash dash"
+    "sidebar dash dash dash dash dash dash"
+    "sidebar dash dash dash dash dash dash"
+    "sidebar dash dash dash dash dash dash"
+    "sidebar dash dash dash dash dash dash"
+    "sidebar dash dash dash dash dash dash"
+    "sidebar dash dash dash dash dash dash";
+    height: 100vh;
+    background-color: #368f8b;
+}
+.head{
+    grid-area: nav;
+    color: black;
+}
+.side{
+    grid-area: sidebar;
+    background-color: #f3dfc1;
+    color: black;
+    h1{
+        border-radius: 50px 0 0 50px
+    }
+}
+.dash{
+    grid-area: dash;
+    padding: 10px;
+    background-color: #ddbea8;
+    color: black;
+    position:relative;
+}
+.task{
+    position:absolute;
+    left: 30%;
+    top:25%;
+}
+@media (max-width:600px) {
+    .head h1{
+        font-size: 1.5rem;
+    }
+    .main-container{
+        display: grid;
+        grid-template-areas:
+        "nav nav nav nav nav nav nav"
+        "sidebar dash dash dash dash dash dash"
+        "sidebar dash dash dash dash dash dash"
+        "sidebar dash dash dash dash dash dash"
+        "sidebar dash dash dash dash dash dash"
+        "sidebar dash dash dash dash dash dash"
+        "sidebar dash dash dash dash dash dash"
+        "sidebar dash dash dash dash dash dash"
+        "sidebar dash dash dash dash dash dash"
+        "sidebar dash dash dash dash dash dash"
+        "sidebar dash dash dash dash dash dash"
+        "sidebar dash dash dash dash dash dash"
+        "sidebar dash dash dash dash dash dash"
+        "sidebar dash dash dash dash dash dash"
+        "sidebar dash dash dash dash dash dash"
+        "sidebar dash dash dash dash dash dash"
+        "sidebar dash dash dash dash dash dash"
+        "sidebar dash dash dash dash dash dash"
+        "sidebar dash dash dash dash dash dash";
+        height: 100vh;
+        background-color: #368f8b;
+    }
+}
+@media (max-width:500px) {
+    .head h1{
+        font-size: 1rem;
+        line-height:2rem;
+    }
+}
